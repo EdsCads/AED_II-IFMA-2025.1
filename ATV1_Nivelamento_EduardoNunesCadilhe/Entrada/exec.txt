@@ -1,0 +1,11 @@
+arvore
+inserir;bola
+imprimir
+deletar;bola
+imprimir
+deletar;bola
+imprimir
+buscar;primo
+buscar;3
+buscar;Maria
+buscar;abobora

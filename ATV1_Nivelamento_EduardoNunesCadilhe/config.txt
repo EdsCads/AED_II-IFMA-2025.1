@@ -1,0 +1,19 @@
+Para executar o programa acesse o caminho "C:\Users\Eu\Documents\Programação\AED-II20241\out\artifacts\Nivelamento"
+Digite o comando "java -jar AED-II20241.jar" no cmd após abrir o prompt na pasta onde está presente o .jar
+
+Seguindo as instruções do arquivo exec.txt a primeira linha decide qual estrutura irá receber os comandos seguintes
+Na leitura dos comandos presentes nas próximas linhas, primeiramente é feito a leitura do comando antes do simbolo ; (ponto e virgula) e o item a ser inserido está presente logo após o simbolo
+
+Para alterações como lista de dados inseridos na criação da estrutura modifique o arquivo "Dados.txt"
+Para alterações como a estrutura de dados, modifique a primeira linha do arquivo "exec.txt" para lista, fila, pilha ou arvore
+Para alterar, remover ou adicionar comandos modifique qualquer linha após a primeira linha no arquivo "exec.txt" seguindo o padrão abaixo:
+Para "inserir", "deletar" ou "buscar" : comando;(item que sofrerá a ação do comando)
+
+(Apenas imprimir possui exceção em seu padrão)
+
+inserir: Insere o item na estrutura
+deletar: Remove o item da estrutura
+buscar: Pesquisa o item na estrutura retornando TRUE or FALSE (Para fila e pilha, ele retorna TRUE caso o item seja o proximo a ser retirado)
+imprimir: Mostra todos os itens presentes na estrutura atualmente. A estrutura arvore adicionalmente mostra os itens em Ordem, Pré-Ordem e Pós-Ordem
+
+Os códigos das classes podem ser encontrados na pasta "/src/main/.."
