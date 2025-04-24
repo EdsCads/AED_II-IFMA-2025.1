@@ -1,6 +1,9 @@
-package Questao2;
+package Questao1;
 
 import java.io.*;
+
+import Tools.EstruturaDados;
+import Tools.Node;
 
 public class Arvore<T> implements EstruturaDados<T> {
   private Node<T> root;
@@ -139,6 +142,23 @@ public class Arvore<T> implements EstruturaDados<T> {
 
   static void toString(String frase){
     System.out.println(frase);
+  }
+
+  public void contaFilho(){
+    if(root!=null)
+      System.out.println("Qtd de nós com pelo menos um filho = "+contaFilho(root,0));
+  }
+
+  private int contaFilho(Node atual,int filhoMin){
+    if(atual.getNext()!=null||atual.getBefore()!=null){
+      filhoMin++;
+    }
+    if(atual.getBefore()!=null)
+      filhoMin=contaFilho(atual.getBefore(),filhoMin);
+    if(atual.getNext()!=null)
+      filhoMin=contaFilho(atual.getNext(),filhoMin);
+
+    return filhoMin;
   }
 
 }

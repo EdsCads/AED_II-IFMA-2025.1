@@ -1,6 +1,9 @@
-package Questao1;
+package Questao2;
 
 import java.io.*;
+
+import Tools.EstruturaDados;
+import Tools.Node;
 
 public class Lista<T> implements EstruturaDados<T> {
   private Node<T> head;
@@ -76,4 +79,16 @@ public class Lista<T> implements EstruturaDados<T> {
     }
     System.out.println();
   }
+
+  public void ordemReversa(){
+    ordemReversa(head);
+  }
+
+  private void ordemReversa(Node atual){
+    if(atual.getNext()!=null) {
+      ordemReversa(atual.getNext());
+    }
+    System.out.println(atual.getElemento());
+  }
+
 }

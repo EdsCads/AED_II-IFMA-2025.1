@@ -11,7 +11,7 @@ Após imprimir a ordem crescente, imprimir os valores na ordem inversa enquanto 
 Entrada: 100, 1100
 Saída: 100, 500, 1000, 1000, 500, 100
 ## 4. Dados n pontos em um plano, identificar os dois mais próximos. Dado que, P1=(x1,y1) e P2=(x2,y2), tem-se:
-$D(P_1,P_2) = \sqrt{(x_1-x_2)^2-(y_1-y_2)^2}$
+$D(P_1,P_2) = \sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$
 
 Entrada:
 1;2

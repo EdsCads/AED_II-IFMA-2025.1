@@ -1,19 +1,14 @@
 package Questao1;
 
+import Questao2.Lista;
+
 public class Main {
     public static void main(String[] args) {
 
-        ArvBin arvore1 = new ArvBin();
+        Arvore<Integer> arvore1 = new Arvore<>("./src\\Tools\\Entrada.txt");
 
-        arvore1.inserir(50);
-        arvore1.inserir(80);
-        arvore1.inserir(60);
-        arvore1.inserir(30);
-        arvore1.inserir(55);
-        arvore1.inserir(20);
-        arvore1.inserir(0);
-        arvore1.imprimir();
-        System.out.println("Temos "+arvore1.contaFilho()+" nós com no minimo 1 filho");
+        arvore1.contaFilho();
+
     }
 }
 
